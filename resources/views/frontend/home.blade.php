@@ -1,130 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Professional Banner & Navbar</title>
-  <!-- Swiper CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-<!-- Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-[#423037] text-gray-100">
-
-  <!-- Navbar -->
-  <header class="w-full bg-[#4f3440] shadow-md">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex justify-between items-center h-20">
-        
-        <!-- Logo -->
-        <div class="text-2xl font-bold tracking-wide text-[#edbd5c]">JONY.</div>
-
-        <!-- Desktop Nav -->
-        <nav class="hidden md:flex space-x-8 text-sm font-medium">
-          <a href="#" class="hover:text-white transition text-[#edbd5c]">Home</a>
-          <a href="#" class="hover:text-white transition text-[#edbd5c]">Works</a>
-          <a href="#" class="hover:text-white transition text-[#edbd5c]">Services</a>
-
-          <!-- Pages Dropdown -->
-          <div class="relative group">
-            <button aria-haspopup="true" class="flex items-center space-x-1 text-[#edbd5c] hover:text-white transition">
-              <span>Pages</span>
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2"
-                viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg>
-            </button>
-            <div
-              class="absolute left-0 mt-2 w-32 bg-[#3A262F] text-sm rounded shadow-lg opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition">
-              <a href="#" class="block px-4 py-2 text-[#edbd5c] hover:bg-[#4A2E38]">Subpage 1</a>
-              <a href="#" class="block px-4 py-2 text-[#edbd5c] hover:bg-[#4A2E38]">Subpage 2</a>
-            </div>
-          </div>
-
-          <a href="#" class="text-[#edbd5c] hover:text-white transition">About</a>
-
-          <!-- Blog Dropdown -->
-          <div class="relative group">
-            <button aria-haspopup="true" class="flex items-center space-x-1 text-[#edbd5c] hover:text-white transition">
-              <span>Blog</span>
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2"
-                viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg>
-            </button>
-            <div
-              class="absolute left-0 mt-2 w-32 bg-[#3A262F] text-sm rounded shadow-lg opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition">
-              <a href="#" class="block px-4 py-2 text-[#edbd5c] hover:bg-[#4A2E38]">Blog Post</a>
-              <a href="#" class="block px-4 py-2 text-[#edbd5c] hover:bg-[#4A2E38]">Blog Grid</a>
-            </div>
-          </div>
-
-          <a href="#" class="text-[#edbd5c] hover:text-white transition">Contact</a>
-        </nav>
-
-        <!-- CTA -->
-        <div class="hidden md:block">
-          <a href="#" class="border border-[#E09B61] text-[#E09B61] hover:bg-[#E09B61] hover:text-[#2E1E25] font-semibold px-5 py-2 rounded transition">
-            Let’s Talk
-          </a>
-        </div>
-
-        <!-- Mobile Menu Button -->
-        <div class="md:hidden">
-          <button id="menu-toggle" aria-label="Toggle mobile menu" class="text-[#E09B61]">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
-              viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round"
-              d="M4 6h16M4 12h16M4 18h16" /></svg>
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 space-y-2 text-sm font-medium">
-      <a href="#" class="block text-[#edbd5c] hover:text-white">Home</a>
-      <a href="#" class="block text-[#edbd5c] hover:text-white">Works</a>
-      <a href="#" class="block text-[#edbd5c] hover:text-white">Services</a>
-      <a href="#" class="block text-[#edbd5c] hover:text-white">Pages</a>
-      <a href="#" class="block text-[#edbd5c] hover:text-white">About</a>
-      <a href="#" class="block text-[#edbd5c] hover:text-white">Blog</a>
-      <a href="#" class="block text-[#edbd5c] hover:text-white">Contact</a>
-      <a href="#" class="block text-[#edbd5c] mt-2 border border-[#E09B61] text-center px-4 py-2 rounded hover:bg-[#E09B61] hover:text-[#2E1E25]">
-        Let’s Talk
-      </a>
-    </div>
-  </header>
-
-  <!-- JavaScript for menu toggle -->
-  <script>
-    document.getElementById('menu-toggle').addEventListener('click', () => {
-      document.getElementById('mobile-menu').classList.toggle('hidden');
-    });
-  </script>
-
+@extends('frontend.layout.main')
+@section('content')
+  
   <!-- Banner Section -->
-  <section class="relative min-h-screen flex flex-col-reverse md:flex-row items-center justify-between px-6 md:px-24 py-12 overflow-hidden">
+  <section class="relative min-h-screen flex flex-col-reverse md:flex-row items-center justify-between px-6 md:px-24 py-16 overflow-hidden bg-[#2E1B24]">
     <!-- Diagonal Background Layers -->
     <div class="absolute inset-0 z-0">
-      <div class="absolute inset-0 bg-[#2E1B24]"></div>
       <div class="absolute left-0 top-0 w-[120%] h-full bg-[#3B2933] rotate-12 origin-left opacity-40"></div>
       <div class="absolute right-0 top-0 w-[120%] h-full bg-[#3B2933] -rotate-12 origin-right opacity-40"></div>
     </div>
-
-    <!-- Content -->
+  
+    <!-- Text Content -->
     <div class="relative z-10 max-w-2xl text-center md:text-left">
-      <h1 class="text-4xl md:text-6xl font-light mb-4">Hi There, I Am <span class="font-semibold">Jony</span></h1>
-      <h2 class="text-3xl md:text-5xl text-[#edbd5c] font-medium mb-8">Creative Director</h2>
-      <a href="#works" class="inline-block border border-[#edbd5c] text-[#edbd5c] px-6 py-3 rounded hover:bg-[#e6b24a] hover:text-white transition duration-300">
+      <h1 class="text-4xl md:text-6xl font-light text-white leading-tight mb-4">
+        Hi There, I Am <span class="font-semibold text-[#edbd5c]">Jony</span>
+      </h1>
+      <h2 class="text-2xl md:text-4xl text-[#edbd5c] font-medium mb-8">Creative Director</h2>
+      <a href="#works" class="inline-block border border-[#edbd5c] text-[#edbd5c] px-6 py-3 rounded-md hover:bg-[#e6b24a] hover:text-white transition duration-300">
         View Works
       </a>
     </div>
-
-    <!-- Image -->
-    <div class="relative z-10 hidden md:block">
-      <img src="https://cdn.pixabay.com/photo/2016/03/31/21/18/computer-1296325_1280.png" alt="Creative work setup by Jony" class="w-[400px] h-auto object-cover" />
+  
+    <!-- Profile Image -->
+    <div class="relative z-10 mb-10 md:mb-0">
+      <img src="https://cdn.pixabay.com/photo/2016/03/31/21/18/computer-1296325_1280.png"
+           alt="Creative work setup by Jony"
+           class="w-[350px] md:w-[400px] h-auto object-contain drop-shadow-lg" />
     </div>
   </section>
-
+  
   <section class="bg-[#3A262F] text-white py-16 px-6 md:px-24">
     <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
       
@@ -367,82 +271,4 @@
     });
   </script>
   
-
-    <!-- Footer Section -->
-    <footer class="bg-[#3A262F] text-white pt-12 pb-8">
-        <div class="container mx-auto px-6">
-            <!-- Main Footer Content -->
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-                <!-- Company Info -->
-                <div class="md:col-span-2">
-                    <h3 class="text-2xl font-bold mb-4">Company Name</h3>
-                    <p class="text-gray-400 mb-4">
-                        Building digital experiences that matter. We create solutions that help businesses grow in the digital world.
-                    </p>
-                    <div class="flex space-x-4">
-                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300" aria-label="Twitter">
-                            <i class="fab fa-twitter text-xl"></i>
-                        </a>
-                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300" aria-label="Facebook">
-                            <i class="fab fa-facebook-f text-xl"></i>
-                        </a>
-                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300" aria-label="Instagram">
-                            <i class="fab fa-instagram text-xl"></i>
-                        </a>
-                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300" aria-label="LinkedIn">
-                            <i class="fab fa-linkedin-in text-xl"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Quick Links -->
-                <div>
-                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
-                    <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Home</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">About Us</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Services</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Portfolio</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Contact</a></li>
-                    </ul>
-                </div>
-
-                <!-- Contact Info -->
-                <div>
-                    <h4 class="text-lg font-semibold mb-4">Contact Us</h4>
-                    <ul class="space-y-3 text-gray-400">
-                        <li class="flex items-start">
-                            <i class="fas fa-map-marker-alt mt-1 mr-3"></i>
-                            <span>123 Business Ave, Suite 456<br>San Francisco, CA 94107</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-phone-alt mr-3"></i>
-                            <span>+1 (555) 123-4567</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-envelope mr-3"></i>
-                            <span>info@company.com</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Divider -->
-            <div class="border-t border-gray-800 my-6"></div>
-
-            <!-- Copyright and Legal -->
-            <div class="flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm">
-                <div class="mb-4 md:mb-0">
-                    &copy; 2025 Company Name. All rights reserved.
-                </div>
-                <div class="flex space-x-6">
-                    <a href="#" class="hover:text-white transition-colors duration-300">Privacy Policy</a>
-                    <a href="#" class="hover:text-white transition-colors duration-300">Terms of Service</a>
-                    <a href="#" class="hover:text-white transition-colors duration-300">Cookie Policy</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-</body>
-</html>
+@endsection

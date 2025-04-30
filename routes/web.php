@@ -23,8 +23,8 @@ require __DIR__.'/auth.php';
 
 // -------------------FRONTEND ----------------------
 Route::get('/contact', [FrontendController::class, 'contact'])->name('frontend.contact');
-
-
+Route::get('/work', [FrontendController::class, 'work'])->name('frontend.work');
+Route::get('/about', [FrontendController::class, 'about'])->name('frontend.about');
 
 
 // causes::::::::::::::::

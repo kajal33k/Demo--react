@@ -1,15 +1,13 @@
-import animate from 'tailwindcss-animate';
-
-export default {
+/** @type {import('tailwindcss').Config} */
+module.exports = {
   content: [
     './resources/**/*.blade.php',
     './resources/**/*.js',
     './resources/**/*.vue',
+    './resources/css/**/*.css',
   ],
   theme: {
-    extend: {
-      // Your theme overrides
-    },
+    extend: {},
   },
-  plugins: [animate],
-};
+  plugins: [],
+}

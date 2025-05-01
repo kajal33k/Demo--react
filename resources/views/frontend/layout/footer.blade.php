@@ -1,77 +1,73 @@
-
-    <!-- Footer Section -->
-    <footer class="bg-[#3A262F] text-white pt-12 pb-8">
-        <div class="container mx-auto px-6">
-            <!-- Main Footer Content -->
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-                <!-- Company Info -->
-                <div class="md:col-span-2">
-                    <h3 class="text-2xl font-bold mb-4">Company Name</h3>
-                    <p class="text-gray-400 mb-4">
-                        Building digital experiences that matter. We create solutions that help businesses grow in the digital world.
-                    </p>
-                    <div class="flex space-x-4">
-                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300" aria-label="Twitter">
-                            <i class="fab fa-twitter text-xl"></i>
-                        </a>
-                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300" aria-label="Facebook">
-                            <i class="fab fa-facebook-f text-xl"></i>
-                        </a>
-                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300" aria-label="Instagram">
-                            <i class="fab fa-instagram text-xl"></i>
-                        </a>
-                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300" aria-label="LinkedIn">
-                            <i class="fab fa-linkedin-in text-xl"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Quick Links -->
-                <div>
-                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
-                    <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Home</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">About Us</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Services</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Portfolio</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Contact</a></li>
-                    </ul>
-                </div>
-
-                <!-- Contact Info -->
-                <div>
-                    <h4 class="text-lg font-semibold mb-4">Contact Us</h4>
-                    <ul class="space-y-3 text-gray-400">
-                        <li class="flex items-start">
-                            <i class="fas fa-map-marker-alt mt-1 mr-3"></i>
-                            <span>123 Business Ave, Suite 456<br>San Francisco, CA 94107</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-phone-alt mr-3"></i>
-                            <span>+1 (555) 123-4567</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-envelope mr-3"></i>
-                            <span>info@company.com</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Divider -->
-            <div class="border-t border-gray-800 my-6"></div>
-
-            <!-- Copyright and Legal -->
-            <div class="flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm">
-                <div class="mb-4 md:mb-0">
-                    &copy; 2025 Company Name. All rights reserved.
-                </div>
-                <div class="flex space-x-6">
-                    <a href="#" class="hover:text-white transition-colors duration-300">Privacy Policy</a>
-                    <a href="#" class="hover:text-white transition-colors duration-300">Terms of Service</a>
-                    <a href="#" class="hover:text-white transition-colors duration-300">Cookie Policy</a>
-                </div>
-            </div>
+<footer class="bg-[#FFF4E4] text-[#2C2C2C]">
+    <!-- Newsletter Section -->
+    <div class="bg-[#ebdfd3] text-center py-12 px-4">
+      <h2 class="text-2xl font-bold mb-2">Newsletter - Stay tuned and get the latest update</h2>
+      <p class="mb-4">Far far away, behind the word mountains</p>
+      <form class="flex justify-center gap-2 max-w-md mx-auto">
+        <input type="email" placeholder="Enter email address" class="px-4 py-2 rounded-l bg-white text-[#2C2C2C] focus:outline-none w-full">
+       <button class="bg-[#ebdfd3] shadow-xl p-2 border border-[#d89b5e]">Subscribe</button>
+      </form>
+    </div>
+  
+    <!-- Main Footer Content -->
+    <div class="px-8 py-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-8">
+      <div>
+        <h3 class="text-xl font-extrabold mb-2">SGVE</h3>
+        <p class="text-sm mb-4">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+        <div class="flex space-x-2">
+          <a href="#" class="bg-[#FFC98F] hover:bg-[#E0B278] text-white rounded-full p-2 transition"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="bg-[#FFC98F] hover:bg-[#E0B278] text-white rounded-full p-2 transition"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="bg-[#FFC98F] hover:bg-[#E0B278] text-white rounded-full p-2 transition"><i class="fab fa-instagram"></i></a>
         </div>
-    </footer>
-
+      </div>
+  
+      <div>
+        <h4 class="font-semibold mb-2">Explore</h4>
+        <ul class="space-y-1 text-sm">
+          <li><a href="#">→ About Us</a></li>
+          <li><a href="#">→ Services</a></li>
+          <li><a href="#">→ Courses</a></li>
+          <li><a href="#">→ Blog</a></li>
+          <li><a href="#">→ Contact Us</a></li>
+        </ul>
+      </div>
+  
+      <div>
+        <h4 class="font-semibold mb-2">Quick Links</h4>
+        <ul class="space-y-1 text-sm">
+          <li><a href="#">→ Contact Us</a></li>
+          <li><a href="#">→ Pricing</a></li>
+          <li><a href="#">→ Terms & Conditions</a></li>
+          <li><a href="#">→ Privacy</a></li>
+          <li><a href="#">→ Feedbacks</a></li>
+        </ul>
+      </div>
+  
+      <div>
+        <h4 class="font-semibold mb-2">Recent Posts</h4>
+        <ul class="space-y-3 text-sm">
+          <li class="flex items-start gap-2">
+            <img src="post1.jpg" alt="Post" class="w-10 h-10 object-cover rounded">
+            <div>
+              <p class="text-xs text-gray-500">Jan. 18, 2021 · Admin</p>
+              <p>Creativity and Inspiration</p>
+            </div>
+          </li>
+          <!-- Repeat similar posts -->
+        </ul>
+      </div>
+  
+      <div>
+        <h4 class="font-semibold mb-2">Have a Question?</h4>
+        <p class="text-sm">📍 203 Fake St. kalpi rooad assam, india</p>
+        <p class="text-sm">📞 +2 392 3929 210</p>
+        <p class="text-sm">✉️ info@sgve.com</p>
+      </div>
+    </div>
+  
+    <div class="text-center text-xs py-4 border-t border-[#EAD9C2]">
+      Copyright ©2025 All rights reserved |
+      This template is made with ❤️ by <a href="#" class="text-[#FFC98F] font-semibold hover:underline">SGVE</a>
+    </div>
+  </footer>
+  

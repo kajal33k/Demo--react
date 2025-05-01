@@ -24,22 +24,22 @@
       <div>
         <h4 class="font-semibold mb-2">Explore</h4>
         <ul class="space-y-1 text-sm">
-          <li><a href="#">→ About Us</a></li>
-          <li><a href="#">→ Services</a></li>
-          <li><a href="#">→ Courses</a></li>
-          <li><a href="#">→ Blog</a></li>
-          <li><a href="#">→ Contact Us</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Courses</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact Us</a></li>
         </ul>
       </div>
   
       <div>
         <h4 class="font-semibold mb-2">Quick Links</h4>
         <ul class="space-y-1 text-sm">
-          <li><a href="#">→ Contact Us</a></li>
-          <li><a href="#">→ Pricing</a></li>
-          <li><a href="#">→ Terms & Conditions</a></li>
-          <li><a href="#">→ Privacy</a></li>
-          <li><a href="#">→ Feedbacks</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Feedbacks</a></li>
         </ul>
       </div>
   
@@ -47,12 +47,27 @@
         <h4 class="font-semibold mb-2">Recent Posts</h4>
         <ul class="space-y-3 text-sm">
           <li class="flex items-start gap-2">
-            <img src="post1.jpg" alt="Post" class="w-10 h-10 object-cover rounded">
+            <img src="https://cdn.pixabay.com/photo/2023/01/02/13/16/woman-7692070_1280.jpg" alt="Post" class="w-10 h-10 object-cover rounded">
             <div>
               <p class="text-xs text-gray-500">Jan. 18, 2021 · Admin</p>
               <p>Creativity and Inspiration</p>
             </div>
           </li>
+          <li class="flex items-start gap-2">
+            <img src="https://cdn.pixabay.com/photo/2023/01/02/13/16/woman-7692070_1280.jpg" alt="Post" class="w-10 h-10 object-cover rounded">
+            <div>
+              <p class="text-xs text-gray-500">Jan. 18, 2021 · Admin</p>
+              <p>Creativity and Inspiration</p>
+            </div>
+          </li>
+          <li class="flex items-start gap-2">
+            <img src="https://cdn.pixabay.com/photo/2023/01/02/13/16/woman-7692070_1280.jpg" alt="Post" class="w-10 h-10 object-cover rounded">
+            <div>
+              <p class="text-xs text-gray-500">Jan. 18, 2021 · Admin</p>
+              <p>Creativity and Inspiration</p>
+            </div>
+          </li>
+          
           <!-- Repeat similar posts -->
         </ul>
       </div>
